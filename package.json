@@ -1,0 +1,13 @@
+{
+  "name": "workflow2",
+  "description": "test of workflow using node, nginx and redis",
+  "dependencies": {
+    "express": "latest",
+    "http": "latest",
+    "fs": "latest",
+    "redis": "latest"    
+  }, 
+ 
+  "main": "index.js"  
+ 
+}
