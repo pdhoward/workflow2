@@ -32,7 +32,7 @@ nodedb2_ENV_<not sure about this>
 // var db2proto = process.env.DB2_PORT_6379_PROTO;
 // var db2port = process.env.DB2_PORT_6379_PORT;
 // var db2addr = process.env.DB2_PORT_6379_ADDR;
-var db2env = process.env.NODEDB2_ENV_DB2_PATH;
+var db2env = process.env.NODEDB2_ENV_PATH;
 
 // INSPECT THE etc/hosts file on Node Container
 
