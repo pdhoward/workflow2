@@ -32,7 +32,7 @@ nodedb2_ENV_<not sure about this>
 // var db2proto = process.env.DB2_PORT_6379_PROTO;
 // var db2port = process.env.DB2_PORT_6379_PORT;
 // var db2addr = process.env.DB2_PORT_6379_ADDR;
-
+var db2env = process.env.NODEDB2_ENV_DB2_PATH;
 
 // INSPECT THE etc/hosts file on Node Container
 
@@ -58,14 +58,14 @@ app.get('/', function(req, res, next) {
 app.set('port', process.env.PORT || 8080);
 
 http.createServer(app).listen(app.get('port'), function() {
-  console.log('THIS IS Workflow 2 -- Trial 1');
+  console.log('THIS IS Workflow 2 -- Trial 2');
   console.log('Node Container is listening ' + process.env.PORT);
   console.log('IN NODE CONTAINER >>>>>>');
   console.log('REDIS LIVE ON ' + redisaddr + ':' + redisport);
   console.log('REDIS PROTOCAL is ' + redisproto);
   console.log('REDIS FIRST URL PORT IS  ' + redisurl);
   console.log('From REDIS CONTAINER >>>>>>');
-  // console.log('DB2 LIVE ON ' + db2addr + ':' + db2port);
+  console.log('PATH in REDIS is  ' + db2env);
   // console.log('and PROTOCAL is ' + db2proto);
   // console.log('and FIRST URL PORT IS  ' + db2url);
   console.log('and NAME IS  ' + db2name);
