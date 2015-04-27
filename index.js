@@ -58,7 +58,7 @@ app.get('/', function(req, res, next) {
 app.set('port', process.env.PORT || 8080);
 
 http.createServer(app).listen(app.get('port'), function() {
-  console.log('THIS IS VERSION 7');
+  console.log('THIS IS Workflow 2 -- Trial 1');
   console.log('Node Container is listening ' + process.env.PORT);
   console.log('IN NODE CONTAINER >>>>>>');
   console.log('REDIS LIVE ON ' + redisaddr + ':' + redisport);
